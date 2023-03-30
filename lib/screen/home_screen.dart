@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea( // SafeArea 시스템 영역 비우기
-        bottom: false, // 하단은 상관없이 영역 덮기
+        bottom: false, // 하단 상관 없이 영역 덮기
         child: Container(
           color: Colors.black,
           // height: MediaQuery.of(context).size.height, //핸드폰 사이즈만큼 너비
@@ -73,6 +73,31 @@ class HomeScreen extends StatelessWidget {
                 height: 50.0,
                 width: 50.0,
                 color: Colors.green,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 50.0,
+                    width: 50.0,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50.0,
+                    width: 50.0,
+                    color: Colors.orange,
+                  ),
+                  Container(
+                    height: 50.0,
+                    width: 50.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 50.0,
+                    width: 50.0,
+                    color: Colors.green,
+                  ),
+                ],
               ),
             ],
           )
